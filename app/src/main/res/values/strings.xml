@@ -56,4 +56,5 @@
     <string name="validation_error">Data yang Anda masukkan tidak valid. Silahkan periksa kembali!</string>
     <string name="unknown_error">Terjadi kesalahan yang tidak diketahui: %1$s</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="content_description">This is For Content Description.</string>
 </resources>

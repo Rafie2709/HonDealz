@@ -9,7 +9,7 @@ import com.capstone.project.hondealz.R
 import com.capstone.project.hondealz.databinding.ActivityMainBinding
 import com.capstone.project.hondealz.view.ViewModelFactory
 import com.capstone.project.hondealz.view.fragments.HistoryFragment
-import com.capstone.project.hondealz.view.fragments.ProfileFragment
+import com.capstone.project.hondealz.view.fragments.profile.ProfileFragment
 import com.capstone.project.hondealz.view.fragments.ScanFragment
 import com.capstone.project.hondealz.view.fragments.home.HomeFragment
 import com.capstone.project.hondealz.view.welcome.WelcomeActivity

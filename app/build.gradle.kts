@@ -54,6 +54,7 @@ dependencies {
     implementation (libs.circleimageview)
     implementation (libs.motiontoast)
     implementation (libs.circleindicator)
+    implementation (libs.androidx.webkit)
 
     implementation(libs.retrofit)
     implementation(libs.retrofit2.converter.gson)

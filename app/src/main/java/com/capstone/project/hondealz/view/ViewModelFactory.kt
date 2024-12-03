@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.capstone.project.hondealz.data.HonDealzRepository
 import com.capstone.project.hondealz.data.di.Injection
 import com.capstone.project.hondealz.view.fragments.home.HomeViewModel
+import com.capstone.project.hondealz.view.fragments.profile.ProfileViewModel
 import com.capstone.project.hondealz.view.login.LoginViewModel
 import com.capstone.project.hondealz.view.main.MainViewModel
 import com.capstone.project.hondealz.view.register.RegisterViewModel
@@ -33,6 +34,10 @@ class ViewModelFactory private constructor(
                 HomeViewModel(repository) as T
             }
 
+            modelClass.isAssignableFrom(ProfileViewModel::class.java) -> {
+                ProfileViewModel(repository) as T
+            }
+
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }
     }
@@ -46,8 +51,7 @@ class ViewModelFactory private constructor(
             if (INSTANCE == null) {
                 synchronized(ViewModelFactory::class.java) {
                     INSTANCE = ViewModelFactory(
-                        Injection.provideRepository(context)
-                    )
+                        Injection.provideRepository(context))
                 }
             }
             return INSTANCE as ViewModelFactory
